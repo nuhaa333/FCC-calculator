@@ -1,0 +1,104 @@
+/* Base styles for the calculator */
+.calculator {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Styling for the display */
+.display {
+  background-color: #333;
+  color: #fff;
+  font-size: 2rem;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: right;
+  margin-bottom: 20px;
+  min-height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Layout for the buttons */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+/* Styling for individual buttons */
+button {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 20px;
+  font-size: 1.5rem;
+  color: #333;
+  border-radius: 10px;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background-color: #ddd;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+button#clear {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+button#clear:hover {
+  background-color: #ff1a1a;
+}
+
+button#equals {
+  background-color: #4CAF50;
+  color: white;
+  grid-column: span 2;
+}
+
+button#equals:hover {
+  background-color: #45a049;
+}
+
+button#divide,
+button#multiply,
+button#subtract,
+button#add {
+  background-color: #ff9800;
+  color: white;
+}
+
+button#divide:hover,
+button#multiply:hover,
+button#subtract:hover,
+button#add:hover {
+  background-color: #f57c00;
+}
+
+button#decimal,
+button#zero {
+  grid-column: span 2;
+}
+
+/* Optional styling for more modern feel */
+body {
+  background-color: #e5e5e5;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
